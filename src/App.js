@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/manage/links/edit'>Edit links</Route>
           <Route path='/manage/links'>Links</Route>
           <Route path='/'>
-            <h1>home</h1>
+            <h1 className="text-muted">home</h1>
           </Route>
         </Switch>
       </div>
