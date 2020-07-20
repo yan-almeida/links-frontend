@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^4.3.1",
     "react": "^16.13.1",
@@ -21,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "package": "npm i --save react-router-dom bootstrap@4.3 redux redux-promise react-redux"
+    "package": "npm i --save react-router-dom bootstrap@4.3 redux redux-promise react-redux axios"
   },
   "eslintConfig": {
     "extends": "react-app"
