@@ -1,18 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import { connect } from "react-redux";
 import { signUp } from "./SignUpActions";
 
-const SignUp = () => {
+const SignUp = (props) => {
+  const { signUp, account } = props;
+
   const submitHandler = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
-    //console.log("*** SignUp.submitHandler.data", data);
     signUp(data);
   };
+
+  if (account) {
+    return <Redirect to='/manage/links'></Redirect>;
+  }
   return (
     <div className='container d-flex justify-content-end'>
       <div className='h-100 p-3 pt-5'>

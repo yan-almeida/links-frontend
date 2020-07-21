@@ -95,3 +95,8 @@ $component-active-bg: $theme-base;
 $link-color: $component-active-bg !default;
 $input-focus-border-color: lighten($component-active-bg, 45%);
 @import "node_modules/bootstrap/scss/bootstrap";
+
+//body - dark mode
+body {
+  background-color: #353535;
+}

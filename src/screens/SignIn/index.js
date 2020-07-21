@@ -13,7 +13,6 @@ const SignIn = (props) => {
     signIn({ email: "yan@almeida.com", password: "123" });
   };
 
-  console.log("*** SignIn.account: ", account);
   return (
     <div className='container d-flex justify-content-end'>
       <div className='h-100 p-3 pt-5'>
